@@ -12,7 +12,7 @@ def about():      #defines what ur website will do
 
 @app.route('/home/')
 def home():      #defines what ur website will do
-    return "dragon_emperor"
+    return render_template("home.html")
 
 if __name__=="__main__":       #when python executes the scrpit, it changes  "__name__" to string "__main__",thus __name__=="__main__"
     app.run(debug=True)        #however, if we import the same script to another script, its name turns to name assigned,i.e "flask_webite.py" in this case
